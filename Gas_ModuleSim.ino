@@ -48,7 +48,7 @@ void loop() {
     updateSerial();
     mySerial.write(26);
     while(analogSensor > sensorThres){
-      //Tiep Tuc Hu 200s neu gia tri GAS > 400
+      //Tiep Tuc Hu coi neu gia tri GAS > 400
       tone(buzzer, 1000, 200);
     }
     //Waiting 30 second before start again
